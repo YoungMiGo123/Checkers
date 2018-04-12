@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Checkers
 {
-    interface IReferee
+    public interface IReferee
     {
         IPlayer Winner();
         bool IsDraw();

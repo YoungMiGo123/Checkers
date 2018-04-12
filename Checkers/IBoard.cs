@@ -5,7 +5,7 @@ using System.Text;
 namespace Checkers
 {
 
-    interface IBoard
+    public interface IBoard
     {
         IPiece Occupant(int position);
         IEnumerable<int> Pieces(Color color);

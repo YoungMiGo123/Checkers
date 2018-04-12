@@ -4,15 +4,18 @@ using System.Text;
 
 namespace Checkers
 {
-    class Piece : IPiece
+    public class Piece : IPiece
     {
-        virtual public Status Status => throw new NotImplementedException();
-
-        virtual public Color Color => throw new NotImplementedException();
-
-        virtual public int Position => throw new NotImplementedException();
-
-        public IEnumerable<int> CapturingMoves(IBoard board)
+        public Piece(Color color, int pos)
+        {
+            Status = Status.Active;
+            Position = pos;
+            Color = color;
+        }
+        public virtual Status Status { get; set; }
+        public virtual Color Color { get; private set; }
+        public virtual int Position { get; private set; }
+        virtual public IEnumerable<int> CapturingMoves(IBoard board)
         {
             throw new NotImplementedException();
         }

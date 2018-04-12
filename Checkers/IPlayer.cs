@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Checkers
 {
-    interface IPlayer
+    public interface IPlayer
     {
         string Name { get; }
         (int, int) GetMove();

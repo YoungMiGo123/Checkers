@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Checkers
 {
-    class Referee : IReferee
+    public class Referee : IReferee
     {
         public bool IsDraw()
         {
