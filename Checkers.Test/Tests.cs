@@ -20,7 +20,7 @@ namespace Checkers.Test
             Assert.That(WhiteCount == 12);
         }
         static object[] legalMovesOnEmptyBoard =
- {
+       {
             new object[] { Color.Black, 1, new int[] {5, 6} },
             new object[] { Color.Black, 2, new int[] {6, 7} },
             new object[] { Color.Black, 3, new int[] {7, 8} },
